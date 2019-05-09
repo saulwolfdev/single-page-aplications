@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
-
-class Header extends Component {
+class Footer extends Component {
     constructor(props) {
         super(props);
         this.state = {  };
     }
     render() {
         return (
-            <header>header</header>
+            <footer>Footer</footer>
         );
     }
 }
 
-export default Header;
+export default Footer;

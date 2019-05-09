@@ -1,0 +1,110 @@
+{
+    "slides": [
+      {
+        "imgName": "Banner_1",
+        "href": "#img-1"
+      },
+      {
+        "imgName": "Banner_2",
+        "href": "#img-2"
+      },
+      {
+        "imgName": "Banner_3",
+        "href": "#img-3"
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "title": "Atun",
+        "href": "#prod-al-natural",
+        "image": "atun",
+        "price": {
+          "listPrice": 64,
+          "sellingPrice": 50
+        },
+        "attributes": [
+          {
+            "field": "brand",
+            "value": "test Bee"
+          }, {
+            "field": "category",
+            "value": "test"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "cebolla",
+        "href": "#prod-en-aceite",
+        "image": "cebolla",
+        "price": {
+          "listPrice": 64,
+          "sellingPrice": 50
+        },
+        "attributes": [
+          {
+            "field": "brand",
+            "value": "test Bee"
+          }, {
+            "field": "category",
+            "value": "test"
+          }
+        ]
+      },{
+        "id": 3,
+        "title": "Arroz",
+        "href": "#prod",
+        "image": "galletitas",
+        "price": {
+          "listPrice": 32,
+          "sellingPrice": 16
+        },
+        "attributes": [
+          {
+            "field": "brand",
+            "value": "test Marca"
+          }, {
+            "field": "category",
+            "value": "test"
+          }
+        ]
+      }, {
+        "id": 4,
+        "title": "Fideos",
+        "href": "#prod",
+        "image": "manteca",
+        "price": {
+          "listPrice": 42.5,
+          "sellingPrice": 42.5
+        },
+        "attributes": [
+          {
+            "field": "brand",
+            "value": "test"
+          }, {
+            "field": "category",
+            "value": "test"
+          }
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "title": "Marca",
+        "field": "brand",
+        "values": [
+          "test",
+          "test2",
+          "test3"
+        ]
+      }, {
+        "title": "Categoría",
+        "field": "category",
+        "values": [
+          "test",
+          "test2"
+        ]
+      }
+    ]
+  }
