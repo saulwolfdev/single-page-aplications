@@ -6,7 +6,7 @@ const Products = props=>{
             <div className="card" key={i}>
                     <div className="card__img">
                         <a href={product.href}>
-                            <img src={`images/${product.image}`}/>
+                            <img src={`images/${product.image}`} alt={product.title}/>
                         </a>
                     </div>
                     <div className="card__off">
@@ -29,9 +29,11 @@ const Products = props=>{
         )
       })
       return (
-        <div className="cards-grid">
+        <main className="main-grid">
+            <div className="cards-grid">
                 {products}
-        </div>
+            </div>
+        </main>
       )
 }
 export default Products;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Sliders from './components/Sliders';
 import Products from "./components/Products";
+import Filters from './components/Filters';
 class App extends Component {
   state={
     slides:[],
@@ -19,10 +20,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Sliders data={this.state.slides}/>
-          <main className="main-grid">
-            <Products data={this.state.products}/>
-          </main>
+          <Sliders data={this.state.slides}/>
+          <Filters data={this.state.filters}/>
+          <Products data={this.state.products}/>
       </div>
     );
   }
