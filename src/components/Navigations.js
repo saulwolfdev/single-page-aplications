@@ -7,7 +7,7 @@ class Navigations extends Component {
     render() {
         return (
             <header>
-                            header
+                 <h1>HEADER</h1>
             </header>
         );
     }

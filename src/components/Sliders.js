@@ -1,19 +1,18 @@
 import React from 'react';
-const Sliders = props=>{    
+const Sliders = props=>{ 
+    console.log(props.data)     
     const slides=props.data.map((slide, i)=>{
         return(
-          <div className="slides" key={i}>
+          <div className="banner" key={i}>
               <a href={slide.href}>
-              <img src={`images/${slide.imgName}.png`}/>
+              <img className="main-banner__banner" src={`images/${slide.imgName}`}/>
               </a>
           </div>
         )
       })
       return (
-       
-        <div className="slide">
-         <h1>Sliders</h1>
-        {slides}
+        <div className="main-banner">
+            {slides}
         </div>
       )
 }

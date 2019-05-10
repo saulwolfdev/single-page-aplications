@@ -1,21 +1,12 @@
 import React, { Component } from 'react';
 import Sliders from './components/Sliders';
-// import {products,slides,filters} from "./json/body.json";
+import Products from "./components/Products";
 class App extends Component {
-  // constructor() {
-  //   super();
-  //   this.state = { 
-  //     slides,
-  //     products,
-  //     filters
-  //    };
-  // }
   state={
     slides:[],
     products:[],
     filters:[]
   }
-
   async componentWillMount(){
       const res = await fetch('http://remote.fizzmod.com/body.json')
       const data = await res.json();
@@ -26,20 +17,12 @@ class App extends Component {
         })
     }
   render() {
-    const slides=this.state.slides.map((slide, i)=>{
-      return(
-        <div className="slides">
-            <a href={slide.href}>
-            <img src={`images/${slide.imgName}.png`}/>
-            </a>
-        </div>
-      )
-    })
     return (
       <div className="App">
-          <div className="grid-product">
-          <Sliders data={this.state.slides}/>
-          </div>
+        <Sliders data={this.state.slides}/>
+          <main className="main-grid">
+            <Products data={this.state.products}/>
+          </main>
       </div>
     );
   }
