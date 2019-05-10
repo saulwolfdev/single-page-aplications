@@ -1,18 +1,18 @@
 import React from 'react';
 const Categories = props=>{ 
-    console.log(props.data)     
-    const slides=props.data.map((slide, i)=>{
-        return(
-          <div className="banner" key={i}>
-              <a href={slide.href}>
-              <img className="main-banner__banner" src={`images/${slide.imgName}`}/>
+    console.log(props.category)
+    const categories=props.category.map((category,i)=>{
+      return(
+        <div className="main__category" key={i}>
+              <a href={category.href}>
+                  {category.title}
               </a>
           </div>
-        )
-      })
+      )
+    })    
       return (
-        <div className="main-banner">
-            {slides}
+        <div className="main-categories">
+           {categories}
         </div>
       )
 }

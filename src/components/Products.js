@@ -1,6 +1,6 @@
 import React from 'react';
 const Products = props=>{ 
-    console.log(props.data)   
+    // console.log(props.data)   
     const products=props.data.map((product, i)=>{
         return(
             <div className="card" key={i}>

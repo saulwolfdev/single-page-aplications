@@ -1,6 +1,6 @@
 import React from 'react';
 const Filters = props=>{ 
-    console.log(props.data)     
+    // console.log(props.data)     
     const filters=props.data.map((filter, i)=>{
         return(
             <ul className="filters" key={i}>
