@@ -9,10 +9,11 @@ const Filters = props=>{
                 </li>
                 <li className="filter__lists">
                     <ul className="filters">
-                        {filter.values.map(value =>
-                        <li clas="filter__lists">
-                           <input className="filter__input" type="checkbox"/>{value}
-                       </li>)}
+                        {filter.values.map((value, i)=>
+                            <li clas="filter__lists" key={i}>
+                                <input className="filter__input" type="checkbox"/>{value}
+                            </li>
+                            )}
                     </ul>
                 </li>
             </ul>
