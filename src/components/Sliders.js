@@ -1,7 +1,5 @@
 import React from 'react';
-const Sliders = props=>{
-    console.log(props.data)
-    
+const Sliders = props=>{    
     const slides=props.data.map((slide, i)=>{
         return(
           <div className="slides" key={i}>
@@ -12,7 +10,11 @@ const Sliders = props=>{
         )
       })
       return (
-        <div className="slide">{slides}</div>
+       
+        <div className="slide">
+         <h1>Sliders</h1>
+        {slides}
+        </div>
       )
 }
 export default Sliders;
