@@ -1,5 +1,6 @@
 import React from 'react';
-const Discount = props=>{ 
+const Discount = props=>{
+    // console.log(props) 
       const discounts= ((props.listPrice-props.sellingPrice)/100)
       if(discounts===0) {
         return(

@@ -2,6 +2,7 @@ import React from 'react';
 import Discount from './Discount';
 import Price from "./Price"
 const Products = props=>{
+    // console.log(props)
     const products=props.data.map((product, i)=>{
         return(
             <div className="card" key={i}>

@@ -12,7 +12,6 @@ class App extends Component {
     products:[],
     filters:[]
   }
-
   async componentWillMount(){
       const respons = await fetch('http://remote.fizzmod.com/menu.json')
       const category = await respons.json();
