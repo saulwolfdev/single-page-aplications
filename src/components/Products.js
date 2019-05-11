@@ -1,5 +1,6 @@
 import React from 'react';
 import Discount from './Discount';
+import Price from "./Price"
 const Products = props=>{
     const products=props.data.map((product, i)=>{
         return(
@@ -19,10 +20,10 @@ const Products = props=>{
                         <h3 className="card__title">
                            {product.title}
                         </h3>
-                        <div className="card__subtitle">
-                            $ {product.price.listPrice}
+                        <div className="card__subtitle price__line">
+                             <Price price={product.price}/>
                         </div>
-                        <div className="card__footer">
+                        <div className="card__footer ">
                             <div className="card__footer-text">
                             $ {product.price.sellingPrice}
                             </div>

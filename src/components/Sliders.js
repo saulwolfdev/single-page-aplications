@@ -2,7 +2,6 @@ import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import React from 'react';
 const Sliders = props=>{ 
-    // console.log(props.data)     
     const slides=props.data.map((slide, i)=>{
         return(
           <div className="banner" key={i}>
@@ -17,7 +16,7 @@ const Sliders = props=>{
       return (
         <div className="main-banner">
             <Slider autoplay={5000}>
-            {slides}
+                      {slides}
             </Slider>
         </div>
       )

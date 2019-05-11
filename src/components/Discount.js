@@ -1,16 +1,11 @@
 import React from 'react';
 const Discount = props=>{ 
       const discounts= ((props.listPrice-props.sellingPrice)/100)
-      
-      if(discounts<props.listPrice) {
+      if(discounts===0) {
         return(
-              <div className="off">
-                    {discounts}
-              </div>
+              <div className="width-out-off">SIN DESCUENTO</div>
         ) 
-    }else{
-      return null
     }
-
+    return(<div className="width-off">CON DESCUENTO -{discounts} %</div>) 
 }
 export default Discount;
