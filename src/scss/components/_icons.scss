@@ -1,25 +1,25 @@
-[class*=icon-]::before{
+[class*=icon-new-]::before{
     content:"";
     display:inline-block;
     margin-left: .15rem;
     width: 1rem;
     height: 1rem;
   }
-.icon-facebook::before{
+.icon-new-facebook::before{
   background: url(../images/facebook.svg);
   background-repeat: no-repeat;
   margin-left: 1rem;
   width: 21px;
   height: 21px;
 }
-.icon-twitter::before{
+.icon-new-twitter::before{
   background: url(../images/twitter.svg);
   background-repeat: no-repeat;
   margin-left: 1rem;
   width: 21px;
   height: 21px;
 }
-.icon-youtube::before{
+.icon-new-youtube::before{
   background: url(../images/youtube.svg);
   background-repeat: no-repeat;
   margin-left: 1rem;

@@ -24,7 +24,7 @@
   margin-right: .5em;
 }
 .main-title::after {
-    border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   margin-right: 0;
   margin-left: .5em;
 }
@@ -69,12 +69,9 @@
             top: 0;
             left: 0;
         }
-
     }
     &__content{
-      
         background: #fff;
-        
     }
     &__title{
         font-family: $open-sans;

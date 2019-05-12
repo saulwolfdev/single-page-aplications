@@ -27,9 +27,9 @@ class Footer extends Component {
                             <li className="footer__list">Horarios y tel&eacute;fonos</li>
                         </ul>
                         <ul className="footer__details--icons">
-                            <li className="footer__list"><i className="icon-facebook"></i></li>
-                            <li className="footer__list"><i className="icon-twitter"></i></li>
-                            <li className="footer__list"><i className="icon-youtube"></i></li>
+                            <li className="footer__list"><i className="icon-new-facebook"></i></li>
+                            <li className="footer__list"><i className="icon-new-twitter"></i></li>
+                            <li className="footer__list"><i className="icon-new-youtube"></i></li>
                         </ul>
             </footer>
         );
