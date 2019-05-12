@@ -34,7 +34,7 @@ const Products = props=>{
         )
       })
       return (
-        <main className="main-grid">
+        <main className="l-container main-grid">
             <div className="cards-grid">
                 {products}
             </div>

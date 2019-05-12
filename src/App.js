@@ -30,9 +30,12 @@ class App extends Component {
           <Navigations/>
           <Categories category={this.state.categories}/>
           <Sliders data={this.state.slides}/>
+        <h1 className="main-title">productos</h1>
+        <div className="l-container">
           <Filters data={this.state.filters}/>
           <Products data={this.state.products}/>
-          <Footer/> */}
+        </div>
+          <Footer/>
       </div>
     );
   }

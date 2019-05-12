@@ -2,7 +2,7 @@ import React from 'react';
 const Categories = props=>{ 
     const categories=props.category.map((category,i)=>{
       return(
-        <li className="main__category" key={i}>
+        <li className="main--category" key={i}>
               <a href={category.href}>
                   {category.title}
               </a>
@@ -10,7 +10,7 @@ const Categories = props=>{
       )
     })    
       return (
-        <ul className="l-container main-categories">
+        <ul className="main-categories l-container">
            {categories}
         </ul>
       )

@@ -8,10 +8,12 @@
     align-items: center;
     background-color: $background-second;
     font-family: $open-sans;
-    &__category{
-        color:#fff;
-    }
     a{
         color:#fff;
     }
+}
+.main--category{
+    font-size: var(--font-size-subtitle);
+    text-transform: uppercase;
+    font-weight: 600;
 }
