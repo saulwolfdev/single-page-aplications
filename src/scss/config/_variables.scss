@@ -1,13 +1,15 @@
 $max-width:1280px;
 $border: 1px solid #D1D3D4;
-$header-height:5.6rem;
+$header-height:5rem;
 $background-first:#F5F5F5;
 $background-second:#1DB779;
 $background-third:#00C4C1;
 $background-four:#1E1E1E;
+$open-sans: 'Open Sans', sans-serif;
 :root{
     --color-border:#1E1E1E;
     --color-border-two:#9B9B9B;
+    --color-border-three:#D1D3D4;
     --color-first:#F5F5F5;
     --color-second:#1DB779;
     --color-third:#00C4C1;
@@ -22,25 +24,31 @@ $background-four:#1E1E1E;
 }
 :root{
     --max-width: 1200px;
-    --header-height: 5.6rem;
+    --header-height: 5rem;
     --logo-width: 4rem;
     --logo-height: 4rem;
     --logo-spacing: .5rem;
+}
+:root{
+    --font-size-subtitle: 1rem;
+    --font-size-input:1.4rem;
+    --letter-spacing: 0.5px;
+    --line-height: 27px;
+    --small-font-size:.85rem;
 }
 :root{
     --h1-font-size:2rem;
     --h2-font-size:1.5rem;
     --h3-font-size:1.25rem;
     --body-font-size:.9rem;
-    --small-font-size:.75rem;
 
-    @include media-queries(large){
-        --h1-font-size:2.5rem;
-        --h2-font-size:1.75rem;
-        --h3-font-size:1.5rem;
-        --body-font-size:1rem;
-        --small-font-size:.8rem;
-    }
+    // @include media-queries(large){
+    //     --h1-font-size:2.5rem;
+    //     --h2-font-size:1.75rem;
+    //     --h3-font-size:1.5rem;
+    //     --body-font-size:1rem;
+    //     --small-font-size:.8rem;
+    // }
 }
 .footer{
     font-size: 2em;

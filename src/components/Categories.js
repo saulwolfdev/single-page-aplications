@@ -2,17 +2,17 @@ import React from 'react';
 const Categories = props=>{ 
     const categories=props.category.map((category,i)=>{
       return(
-        <div className="main__category" key={i}>
+        <li className="main__category" key={i}>
               <a href={category.href}>
                   {category.title}
               </a>
-          </div>
+          </li>
       )
     })    
       return (
-        <div className="main-categories">
+        <ul className="l-container main-categories">
            {categories}
-        </div>
+        </ul>
       )
 }
 export default Categories;

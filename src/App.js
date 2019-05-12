@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <div className="App">
           <Navigations/>
-          {/* <Categories category={this.state.categories}/>
+          <Categories category={this.state.categories}/>
           <Sliders data={this.state.slides}/>
           <Filters data={this.state.filters}/>
           <Products data={this.state.products}/>

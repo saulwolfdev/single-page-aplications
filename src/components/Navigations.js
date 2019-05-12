@@ -12,8 +12,9 @@ class Navigations extends Component {
                    <img className="logo" src="images/logo_fizzmod.svg" alt="logo"/>
                    </div>
                     <form className="main-form">
+                        <i className="icon-icn_search"></i>
                         <input type="text" className="main-form--input" name="name" placeholder="Buscar un producto"/>
-                        <button className="main-form--button"><i></i>mi carrito</button>
+                        <button className="main-form--button"><i className="icon-icn_cart"></i>mi carrito</button>
                     </form>
                     <nav className="main-nav">
                           <ul className="main-menu">
