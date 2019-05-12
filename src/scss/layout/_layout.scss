@@ -1,15 +1,9 @@
 .l-container{
     max-width:$max-width;
-    display: flex;
+    // display: flex;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
-}
-.l-section{
-   margin-bottom: 2rem;
-   @include media-queries(large){
-       margin-bottom: 4rem;
-   } 
 }
 .center-block{
     margin-left:auto;
@@ -17,4 +11,15 @@
 }
 .center-text{
 text-align: center;   
+}
+.main-grid{
+    justify-content: space-between;
+    height: auto;
+    display: grid;
+    grid-template-areas: "aside  cards  cards  cards cards"
+                         "aside  cards  cards  cards cards"
+                         "footer footer footer footer footer";
+    grid-template-columns: 20% 1fr;
+    grid-gap: .5em;
+    min-height: 90vh;
 }

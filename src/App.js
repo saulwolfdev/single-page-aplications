@@ -31,11 +31,12 @@ class App extends Component {
           <Categories category={this.state.categories}/>
           <Sliders data={this.state.slides}/>
         <h1 className="main-title">productos</h1>
-        <div className="l-container">
+        <div className="l-container main-grid">
           <Filters data={this.state.filters}/>
           <Products data={this.state.products}/>
-        </div>
           <Footer/>
+        </div>
+        {/* <Footer/> */}
       </div>
     );
   }

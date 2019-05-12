@@ -1,0 +1,33 @@
+.main-footer{
+    grid-area: footer;
+    background-color:$background-four;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer{
+    list-style: none;
+}
+.footer__details{
+    list-style: none;
+    color:#fff;
+    font-size: var(--small-font-size);
+    letter-spacing: 1px;
+    line-height: var(--line-height);
+    &--icons{
+        display: flex;
+        list-style: none;
+    }
+}
+.footer__title{
+    font-size: var(--small-font-footer);
+    font-weight: 500;
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer__list{
+    font-size: var(--small-font-footer);
+}

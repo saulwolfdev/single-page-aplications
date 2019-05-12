@@ -28,39 +28,84 @@
   margin-right: 0;
   margin-left: .5em;
 }
+.cards-grid{
+    grid-area: cards;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: baseline;
+}
 .card{
+    font-family: $open-sans;
+    position: relative;
     margin-bottom: 2rem;
-    border: 1px solid var(--color-border);
+    width: 23%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
     &__img img{
         display: block;
+        margin:  auto;
+    }
+    &__off{
+        &--width-off{
+            background-color:$background-third;
+            height:46px;
+            width: 46px;
+            padding: 1%;
+            text-align: center;
+            border-radius: 50%;
+            color: #fff;
+            font-size:var(--small-font-size);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            font-weight: 700;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
     }
     &__content{
-        padding: 1rem;
+      
         background: #fff;
         
     }
     &__title{
-        font-size: var(--h3-font-size);
+        font-family: $open-sans;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 400;
+    }
+    &__title:hover{
+        color:var(--color-second);
+    }
+    &__price__line{
+        &--line{
+            font-size: var(--small-font-size);
+            color:var(--color-five);
+        }
+        &--outline{
+            text-decoration:line-through;
+            font-size: var(--small-font-size);
+            color:var(--color-five);
+        }
     }
     &__subtitle{
+        font-family: $open-sans;
         margin-top: .1rem;
         margin-bottom: .5rem;
         opacity: .6;
     }
     &__footer{
-        border-top:1px solid var(--color-border);
-        margin-top:1rem;
-        padding-top: 1rem;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-.cards-grid{
-    @include media-queries(large){
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-gap:2rem;
-        
+        font-family: $open-sans;
+        font-size: 18px;
+        color:var(--color-second);
+        font-weight: 600;
     }
 }

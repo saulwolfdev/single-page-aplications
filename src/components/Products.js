@@ -21,7 +21,7 @@ const Products = props=>{
                         <h3 className="card__title">
                            {product.title}
                         </h3>
-                        <div className="card__subtitle price__line">
+                        <div className="card__price__line">
                              <Price price={product.price}/>
                         </div>
                         <div className="card__footer ">
@@ -34,11 +34,9 @@ const Products = props=>{
         )
       })
       return (
-        <main className="l-container main-grid">
-            <div className="cards-grid">
+            <main className="cards-grid">
                 {products}
-            </div>
-        </main>
+            </main>
       )
 }
 export default Products;

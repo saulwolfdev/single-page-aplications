@@ -10,7 +10,7 @@ const Categories = props=>{
       )
     })    
       return (
-        <ul className="main-categories l-container">
+        <ul className="main-categories">
            {categories}
         </ul>
       )
