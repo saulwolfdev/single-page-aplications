@@ -1,0 +1,22 @@
+.l-container{
+    max-width:$max-width;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+.l-section{
+   margin-bottom: 2rem;
+   @include media-queries(large){
+       margin-bottom: 4rem;
+   } 
+}
+.center-block{
+    margin-left:auto;
+    margin-right: auto;
+}
+.center-text{
+text-align: center;   
+}

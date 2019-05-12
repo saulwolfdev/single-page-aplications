@@ -1,0 +1,11 @@
+[class*=icon-]::before{
+    content:"";
+    display:inline-block;
+    margin-left: .15rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.icon-location::before{
+  background: url();
+}

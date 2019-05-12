@@ -1,0 +1,16 @@
+.main-menu{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom:0;
+    display: flex;
+    justify-content: flex-end;
+}
+.main-menu__link{
+    color:var(--color-second);
+    margin-left: 1rem;
+
+}
+.main-nav{
+   background-color:#fff;
+}

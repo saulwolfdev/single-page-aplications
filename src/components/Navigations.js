@@ -6,8 +6,23 @@ class Navigations extends Component {
     }
     render() {
         return (
-            <header>
-                 <h1>HEADER</h1>
+            <header className="main-header">
+                <div className="l-container main-header__block">
+                   <div className="main-logo">
+                   <img className="logo" src="images/logo_fizzmod.svg" alt="logo"/>
+                   </div>
+                    <form className="main-form">
+                        <input type="text" className="main-form--input" name="name" placeholder="Buscar un producto"/>
+                        <button className="main-form--button"><i></i>mi carrito</button>
+                    </form>
+                    <nav className="main-nav">
+                          <ul className="main-menu">
+                              <li className="main-menu__item"><a className="main-menu__link" href="#">ayuda</a></li>
+                              <li className="main-menu__item"><a className="main-menu__link" href="#">mis pedidos</a></li>
+                              <li className="main-menu__item"><a className="main-menu__link" href="#">mi cuenta</a></li>
+                          </ul>
+                    </nav>
+                </div>
             </header>
         );
     }

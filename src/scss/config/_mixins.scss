@@ -1,0 +1,19 @@
+
+$breakpoints:(
+    extra-small:350px,
+    small:450px,
+    medium:879px,
+    large:1230px,
+    extra-large:1600px
+  );
+@mixin media-queries($break-point-size) {
+    @if map-has-key($breakpoints, $break-point-size) {
+        @media screen and ( min-width: map-get($breakpoints, $break-point-size) ) {
+        @content;
+        }
+    } @else {
+        @media screen and ( min-width: $break-point-size ) {
+        @content;
+        }
+    }
+}

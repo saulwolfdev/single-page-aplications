@@ -3,7 +3,6 @@ import 'react-animated-slider/build/horizontal.css';
 import React from 'react';
 const Sliders = props=>{ 
     const slides=props.data.map((slide, i)=>{
-      console.log(props)
         return(
           <div className="banner" key={i}>
               <a href={slide.href}>
@@ -22,3 +21,4 @@ const Sliders = props=>{
       )
 }
 export default Sliders;
+
