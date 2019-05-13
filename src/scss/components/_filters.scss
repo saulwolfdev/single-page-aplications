@@ -8,7 +8,7 @@
     list-style: none;
     font-weight: 300;
     &__title{
-        border-bottom: 1px solid #000;
+        border-bottom: $border;
         text-transform: uppercase;
         margin-bottom: 15px;
         padding-bottom: 15px;
