@@ -36,7 +36,6 @@ class App extends Component {
           <Products data={this.state.products}/>
           <Footer/>
         </div>
-        {/* <Footer/> */}
       </div>
     );
   }
