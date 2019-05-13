@@ -3,8 +3,8 @@ $breakpoints:(
     extra-small:350px,
     small:450px,
     medium:879px,
-    large:1230px,
-    extra-large:1600px
+    large:1280px,
+    extra-large:1900px
   );
 @mixin media-queries($break-point-size) {
     @if map-has-key($breakpoints, $break-point-size) {
