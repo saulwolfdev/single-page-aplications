@@ -23,7 +23,8 @@ class Footer extends Component {
                             <li className="footer__list">Mis recetas</li>
                     </ul>
                         <ul className="footer__details">
-                            <h4 className="footer__title">Nuestras Sucursales</h4>
+                            <h4 className="footer__title">Contactanos</h4>
+                            <li className="footer__list">Nuestras sucursales</li>
                             <li className="footer__list">Horarios y tel&eacute;fonos</li>
                         </ul>
                         <ul className="footer__details--icons">
