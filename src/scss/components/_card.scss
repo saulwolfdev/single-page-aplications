@@ -75,7 +75,7 @@
     }
     &__title{
         font-family: $open-sans;
-        font-size: 16px;
+        font-size: 14px;
         cursor: pointer;
         font-weight: 400;
     }
@@ -92,12 +92,6 @@
             font-size: var(--small-font-size);
             color:var(--color-five);
         }
-    }
-    &__subtitle{
-        font-family: $open-sans;
-        margin-top: .1rem;
-        margin-bottom: .5rem;
-        opacity: .6;
     }
     &__footer{
         font-family: $open-sans;

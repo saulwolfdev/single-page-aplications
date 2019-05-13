@@ -6,7 +6,7 @@ class Navigations extends Component {
     }
     render() {
         return (
-            <header className=" l-container main-header">
+            <header className="l-container main-header">
                 <div className="main-header__block">
                    <div className="main-logo">
                    <img className="logo" src="images/logo_fizzmod.svg" alt="logo"/>

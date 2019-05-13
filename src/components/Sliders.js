@@ -6,14 +6,14 @@ const Sliders = props=>{
         return(
           <div className="banner" key={i}>
               <a href={slide.href}>
-              <img className="main-banner__banner" src={`images/${slide.imgName}`} alt={props.title}/>
+              <img className="banner__slider" src={`images/${slide.imgName}`} alt={props.title}/>
               </a>          
           </div>
           
         )
       })
       return (
-        <div className="main-banner">
+        <div className="l-container main-banner">
             <Slider autoplay={5000}>
                       {slides}
             </Slider>
